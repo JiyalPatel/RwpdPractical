@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ASHU'S RESUME</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- Your custom styles -->
+  <style>
+    body {
+      padding-top: 56px; /* Adjusted for the fixed navbar */
+    }
+
+    /* Add your custom styles here */
+  </style>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+    <a class="navbar-brand" href="#">ASHU'S RESUME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about" data-toggle="tooltip" data-placement="bottom" title="About ">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education" data-toggle="tooltip" data-placement="bottom" title="Education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" data-toggle="tooltip" data-placement="bottom" title="Skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" data-toggle="tooltip" data-placement="bottom" title="Experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-toggle="tooltip" data-placement="bottom" title="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading text-uppercase">About Me</h2>
+          <p class="text-muted">I am a motivated and enthusiastic student with a passion for learning and technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading text-uppercase">Education</h2>
+          <p class="text-muted">B.S. in Computer Science - XYZ University</p>
+          <p class="text-muted">High School Diploma - ABC High School</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading text-uppercase">Skills</h2>
+          <ul class="list-inline">
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="HTML5"><i class="fab fa-html5 fa-3x"></i></li>
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="CSS3"><i class="fab fa-css3-alt fa-3x"></i></li>
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="JavaScript"><i class="fab fa-js fa-3x"></i></li>
+            <!-- Add more skills as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading text-uppercase">Experience</h2>
+          <p class="text-muted">Intern - XYZ Tech Solutions</p>
+          <p class="text-muted">Freelance Web Developer</p>
+          <BR>
+          <BR>
+          <BR>
+          <BR>
+    
+          
+          <!-- Collapsible (Accordion) Section -->
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Item 
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Content for Collapsible Item #1
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Popover Section -->
+          <button type="button" class="btn btn-secondary" data-toggle="popover" title="Popover Title" data-content="Content for the Popover">Click me for Popover</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading text-uppercase">Contact Me</h2>
+          <p class="text-muted">Feel free to reach out to me via email at <a href="mailto:krish@example.com">work@jiyal.com</a>.</p>
+        </div>
+      </div>
+    </div>
+    <BR>
+    <BR>
+    <BR>
+    <BR>
+    <BR>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Initialize tooltips, popovers, and collapse -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+</body>
+</html>

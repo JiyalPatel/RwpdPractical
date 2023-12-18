@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PRACTICAL_20</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <a class="navbar-brand" href="#">
+            <img src="IMAGES/CLG.JPG" alt="Your Logo" width="400" height="70">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+            </li>
+        </ul>
+        </div>
+
+
+    </nav>
+    <div id="section1" class="container bg-light" style="margin-top:70px">
+        <div class="text-center">
+            <h1>[Section One]</h1>
+            <h2>About Us</h2>
+            <p>Government Polytechnic Himmatnagar is a premier technical education in Sabarkantha District working since
+                1983
+                and Computer Engineering Department started from year 2009 with capacity of 60 students.
+                Computer Engineering course is AICTE approved since 2009 and with benefit of location all
+                seats are filled during admission every year. It is a long-standing policy of the Computer
+                Department, Government Polytechnic Himmatnagar that the senior faculty members have a special
+                responsibility to orient junior and new faculty and to give guidance and assistance on matters of
+                teaching to maintain the academic vitality and to conduct teaching observations. All faculty members
+                are obligated to meet all classes at the time and place scheduled and for the prescribed number of
+                hours.
+                Our faculties have counseling responsibilities concerns the course they are currently taking,
+                an independent study project, and future career.
+                During the year students are asked to represent their traditional ceremonies, technical fair
+                and outreach activities and the Department give them opportunity for the same.
+                We are trying to generate creativity, curiosity among the students.
+                Many students of our department are actively involved in NSS activities and giving their
+                contribution to society.
+                To give the students industry exposure, we organize seminars on latest technologies and
+                invite experts from industries. We also encourage our students to know the development in
+                industries by visiting them. Our faculties put their efforts to prepare students so they can
+                think logically and apply standard practices and strategies in their overall development.</p>
+        </div>
+
+    </div>
+
+    <div id="section2" class="container bg-light" style="margin-top:70px">
+        <div class="text-center">
+            <h1>[Section Two]</h1>
+            <h3>Institute Vision</h3>
+            <p>Government Polytechnic Himmatnagar aims to develop the Quality Technical Education System to produce
+                Diploma Engineers of Highest Quality,
+                compatible to Global Advance Technology and as per the needs of industries and society.
+            <p>
+            <h3>Department Vision</h3>
+            <p>To produce competent professional Computer Engineers by creating an environment that fosters the growth
+                of creativity, innovation to adopt global skills of advanced technology as per the needs of industry and
+                society.
+            <p>
+        </div>
+    </div>
+
+    <div id="section3" class="container bg-light" style="margin-top:70px">
+        <div class="text-center">
+            <h1>[Section Three]</h1>
+            <p>Government Polytechnic Himmatnagar is a premier technical education in Sabarkantha District working since 1983 and Computer Engineering Department started from year 2009 with capacity of 60 students. Computer Engineering course is AICTE approved since 2009 and with benefit of location all seats are filled during admission every year.</p>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Toggle Section
+                3</button>
+            <div id="demo" class="collapse">
+                <p>Government Polytechnic Himmatnagar</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="container mt-5">
+        <div class="text-center">
+            <h2>Tooltip and Popover Example</h2>
+            <p>Add a tooltip to this text <a href="#" data-toggle="tooltip" title="Some tooltip text!">here</a>.</p>
+            <p>Or a popover to this button <button type="button" class="btn btn-secondary" data-toggle="popover"
+                    title="Popover Title" data-content="Content inside the popover">Popover</button>.</p>
+
+            <!-- New button with a larger content popover -->
+            <button type="button" class="btn btn-primary" data-toggle="popover" title="Large Popover"
+                data-content="A large popover to demonstrate the max-width of the bootstrap popover."
+                data-placement="bottom" data-html="true">Large Popover</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover({
+                container: 'body',
+                trigger: 'hover focus'
+            });
+        });
+    </script>
+
+    
+
+</body>
+
+</html>

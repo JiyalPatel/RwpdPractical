@@ -1,0 +1,126 @@
+
+<html>
+<head>
+    
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Missing Details Modal -->
+<div class="modal fade" id="missingDetailsModal" tabindex="-1" role="dialog" aria-labelledby="missingDetailsModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="missingDetailsModalLabel">Missing Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Some details are missing. Are you sure you want to proceed?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="proceedWithoutDetails">Proceed</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Save Success Modal -->
+<div class="modal fade" id="saveSuccessModal" tabindex="-1" role="dialog" aria-labelledby="saveSuccessModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="saveSuccessModalLabel">Save Successful</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                The record has been successfully saved.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Save Error Modal -->
+<div class="modal fade" id="saveErrorModal" tabindex="-1" role="dialog" aria-labelledby="saveErrorModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="saveErrorModalLabel">Save Error</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                There was an error while saving the record. Please try again.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Your student registration form -->
+    <form id="studentRegistrationForm">
+        <div class="form-group">
+            <label for="studentName">Name</label>
+            <input type="text" class="form-control" id="studentName">
+        </div>
+        <div class="form-group">
+            <label for="studentEmail">Email</label>
+            <input type="email" class="form-control" id="studentEmail">
+        </div>
+        <div class="form-group">
+            <label for="studentAge">Age</label>
+            <input type="number" class="form-control" id="studentAge">
+        </div>
+        <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#saveButton').click(function() {
+            // Perform your validation checks here
+            var name = $('#studentName').val();
+            var email = $('#studentEmail').val();
+            var age = $('#studentAge').val();
+
+            if (name === '' || email === '' || age === '') {
+                $('#missingDetailsModal').modal('show');
+            } else {
+                // Simulating save success
+                // Replace this with your actual save logic
+                var randomNumber = Math.random();
+                if (randomNumber > 0.5) {
+                    $('#saveSuccessModal').modal('show');
+                } else {
+                    $('#saveErrorModal').modal('show');
+                }
+            }
+        });
+
+        // Action for proceeding without details
+        $('#proceedWithoutDetails').click(function() {
+            // Proceed with your logic when details are missing
+            // For example, continue saving without certain details
+            $('#saveSuccessModal').modal('show'); // Simulating success
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+
+<head>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1 class="text-center">Student Registration Form</h1>
+    <div class="container mt-5">
+        <form class="mt-4">
+            <div class="mb-3 input-group">
+                <label for="firstName" class="input-group-text">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+
+
+            <div class="mb-3 form-floating">
+                <input type="text" class="form-control" id="middleName" placeholder=" " required>
+                <label for="middleName" class="form-label">Middle Name</label>
+            </div>
+
+            <div class="mb-3 form-floating">
+                <input type="text" class="form-control" id="lastName" placeholder=" " required>
+                <label for="lastName" class="form-label">Last Name</label>
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <div class="input-group">
+                    <input type="date" class="form-control" id="dob" required>
+                    <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label"> Select Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                    <label class="form-check-label" for="male">
+                        <i class="bi bi-gender-male"></i> Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                    <label class="form-check-label" for="female">
+                        <i class="bi bi-gender-female"></i> Female
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="other" value="other" required>
+                    <label class="form-check-label" for="other">
+                        <i class="bi bi-gender-transgender"></i> Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <h2>Contact Information</h2>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="email name" aria-label="email name"
+                    aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+            </div>
+
+            <div class="mb-3 input-group">
+                <label for="phone" class="input-group-text">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Home Address</label>
+            </div>
+
+            <div class="mb-3 input-group">
+                <label for="street" class="input-group-text">Street Address</label>
+                <textarea class="form-control" id="address" rows="4" placeholder="Enter your full address"
+                    required></textarea>
+            </div>
+
+            <div class="mb-3 input-group">
+                <label for="city" class="input-group-text">City</label>
+                <select class="form-select" id="city" required>
+                    <option value="" selected disabled>Select your city</option>
+                    <option value="VADODARA">VADODARA</option>
+                    <option value="HIMATNAGAR">HIMATNAGAR</option>
+                    <option value="AHEMDABAD">AHEMDABAD</option>
+                    <option value="GANDHINAGAR">GANDHINAGAR</option>
+                </select>
+            </div>
+
+            <div class="mb-3 input-group">
+                <label for="postal" class="input-group-text">Postal/ZIP Code</label>
+                <input type="text" class="form-control" id="postal" placeholder="Enter your postal/ZIP code" required
+                    maxlength="6">
+            </div>
+
+
+            <div class="mb-3 input-group">
+                <label for="country" class="input-group-text">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="INDIA" disabled>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

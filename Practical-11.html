@@ -1,0 +1,51 @@
+<html>
+<head>
+    
+    <title>PRACTICAL_11</title>
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center my-4">JOB APPLICATION FORM</h1>
+
+    <form>
+        <div class="mb-3 input-group">
+            <label for="fullName" class="input-group-text">FULL NAME</label>
+            <input type="text" class="form-control" id="fullName" placeholder="ENTER YOUR FULL NAME" required>
+        </div>
+        
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="ENTER YOUR EMAIL ID"  required>
+            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+        </div>
+
+        <div class="mb-3 input-group">
+            <label for="phone" class="input-group-text">PHONE NUMBER</label>
+            <input type="tel" class="form-control" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required>
+        </div>
+
+        <div class="form-group input-group">
+            <label for="resume" class="input-group-text">UPLOAD RESUME</label>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="resume" accept=".pdf, .doc, .docx">
+                <label class="custom-file-label" for="resume">CHOOSE FILE</label>
+            </div>
+        </div>
+        
+
+        <div class="form-group input-group">
+            <label for="message" class="input-group-text">COVER LETTER</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+    </form>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

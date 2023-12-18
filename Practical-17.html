@@ -1,0 +1,95 @@
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Service Providers</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Service Providers</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">Provider 1</li>
+              <li class="list-group-item">Provider 2</li>
+              <li class="list-group-item">Provider 3</li>
+              <li class="list-group-item">Provider 4</li>
+              <li class="list-group-item">Provider 5</li>
+              <li class="list-group-item">Provider 6</li>
+              <li class="list-group-item">Provider 7</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+          <strong>Success!</strong> Service providers loaded successfully.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="warning-alert">
+          <strong>Warning!</strong> Some providers may have limited availability.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" id="error-alert">
+          <strong>Error!</strong> Failed to load service providers. Please try again later.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert" id="info-alert">
+          <strong>Info!</strong> Check out our special offers from certain providers.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Function to display a message after the alert is closed
+    function showAlertMessage(message) {
+      alert("Alert closed! " + message);
+    }
+
+    // Attach event listeners for each alert
+    document.getElementById("success-alert").addEventListener("closed.bs.alert", function () {
+      showAlertMessage("Service providers loaded successfully.");
+    });
+
+    document.getElementById("warning-alert").addEventListener("closed.bs.alert", function () {
+      showAlertMessage("Some providers may have limited availability.");
+    });
+
+    document.getElementById("error-alert").addEventListener("closed.bs.alert", function () {
+      showAlertMessage("Failed to load service providers. Please try again later.");
+    });
+
+    document.getElementById("info-alert").addEventListener("closed.bs.alert", function () {
+      showAlertMessage("Check out our special offers from certain providers.");
+    });
+  </script>
+
+</body>
+
+</html>
